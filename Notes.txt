@@ -1,0 +1,12 @@
+Dev ops  Training - 28th Sep 2017
+
+Containers : set of VMs.
+
+https:\\cloudenabled4.singin.aws.amazon.com/console
+
+avaya/Root1234
+
+EC2
+
+
+Public IP: 18.221.104.12
