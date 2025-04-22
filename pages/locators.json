@@ -1,0 +1,42 @@
+{
+    "locators": {
+        "OrangeHRMLoginPage": {
+        "username": {
+            "method": "getByRole",
+            "role": "textbox",
+            "name": "Username"
+        },
+        "password": {
+            "method": "getByRole",
+            "role": "textbox",
+            "name": "Password"
+        },
+        "loginButton": {
+            "method": "getByRole",
+            "role": "button",
+            "name": "Login"
+        },
+        "forgotPassword": {
+            "method": "getByText",
+            "value": "Forgot your password?"
+        }
+    },
+    "OrangeHRMForgotPasswordPage": {
+        "userName": {
+            "method": "getByRole",
+            "role": "textbox",
+            "name": "Username"
+        },
+        "resetPasswordButton": {
+            "method": "getByRole",
+            "role": "button",
+            "name": "Reset Password"
+        },
+        "cancelButton": {
+            "method": "getByRole",
+            "role": "button",
+            "name": "Cancel"
+        }
+    }
+    }
+}

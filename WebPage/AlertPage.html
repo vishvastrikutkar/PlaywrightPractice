@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Page</title>
+</head>
+<body>
+
+    <button id="alert-btn">Show Alert</button>
+    <button id="confirm-btn">Show Confirm</button>
+    <button id="prompt-btn">Show Prompt</button>
+    <button id="popup-btn">Open Popup</button>
+
+    <div class="modal" id="custom-modal" style="display:none;">
+        <p>Custom Modal Dialog</p>
+        <button class="close-btn">Close</button>
+    </div>
+    <button id="open-modal">Open Modal</button>
+
+    <script>
+        document.getElementById('alert-btn').onclick = () => alert('This is an alert!');
+        document.getElementById('confirm-btn').onclick = () => confirm('Are you sure?');
+        document.getElementById('prompt-btn').onclick = () => prompt('Enter your name:', 'Default');
+        
+        document.getElementById('popup-btn').onclick = () => {
+            window.open('https://example.com', '_blank');
+        };
+
+        document.getElementById('open-modal').onclick = () => {
+            document.getElementById('custom-modal').style.display = 'block';
+        };
+        document.querySelector('.close-btn').onclick = () => {
+            document.getElementById('custom-modal').style.display = 'none';
+        };
+    </script>
+
+</body>
+</html>

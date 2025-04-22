@@ -1,0 +1,22 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "echo 'Tests Started....'",
+    "test": "npx playwright test",
+    "posttest": "echo 'Tests completed!'",
+    "debug": "npx playwright test --debug",
+    "inspect": "npx playwright codegen https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.2",
+    "allure-playwright": "^3.2.1",
+    "monocart-reporter": "^2.9.15"
+  }
+}
